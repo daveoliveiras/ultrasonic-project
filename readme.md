@@ -13,11 +13,14 @@ Turma BCC 191104A16
 ## Imagens
 
 ### Sensor ultrassônico
+<img src="images/ultrasonic.jpg" width="300px" style="border-radius:3px;"/>
 
-### LED 
-
-### Buzzer
+### LED e Buzzer
+<img src="images/led_buzzer.jpg" width="300px" style="border-radius:3px;"/>
 
 ### Arduino
+<img src="images/arduino.jpg" width="300px" style="border-radius:3px;"/>
 
 ### Projeto montado
+<img src="images/project.jpg" width="300px" style="border-radius:3px;"/>
+<img src="images/project2.jpg" width="300px" style="border-radius:3px;"/>
