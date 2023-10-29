@@ -15,7 +15,6 @@ void setup() {
 
 int distance(){
   digitalWrite(trigger, HIGH);
-  // delayMicroseconds(10);
   delay(10);
   digitalWrite(trigger, LOW);
   int duration = pulseIn(echo, HIGH);
