@@ -1,8 +1,9 @@
-const int led = 3;
-const int buzzer = 2;
-const int trigger = 4;
-const int echo = 5;
-boolean sleep = false;
+const int buzzer = 4;
+const int led = 2;
+const int trigger = 8;
+const int echo = 10;
+const int note = 1000;
+bool sleep = false;
 
 void setup() {
   Serial.begin(9600);
@@ -54,7 +55,7 @@ void loop() {
 
     if(distance() == 5){
       digitalWrite(led, HIGH);
-      tone(buzzer, 440, 100);
+      tone(buzzer, note, 100);
       delay(100);
       digitalWrite(led, LOW);
       delay(1000);
@@ -62,7 +63,7 @@ void loop() {
 
     if(distance() == 4){
       digitalWrite(led, HIGH);
-      tone(buzzer, 440, 100);
+      tone(buzzer, note, 100);
       delay(100);
       digitalWrite(led, LOW);
       delay(500);
@@ -70,7 +71,7 @@ void loop() {
 
     if(distance() == 3){
       digitalWrite(led, HIGH);
-      tone(buzzer, 440, 100);
+      tone(buzzer, note, 100);
       delay(100);
       digitalWrite(led, LOW);
       delay(250);
@@ -78,7 +79,7 @@ void loop() {
 
     if(distance() == 2){
       digitalWrite(led, HIGH);
-      tone(buzzer, 440, 100);
+      tone(buzzer, note, 100);
       delay(100);
       digitalWrite(led, LOW);
       delay(100);
@@ -86,7 +87,7 @@ void loop() {
 
     if(distance() == 1){
       digitalWrite(led, HIGH);
-      tone(buzzer, 440, 5000);
+      tone(buzzer, note, 5000);
       delay(5000);
       sleep = true;
     };
